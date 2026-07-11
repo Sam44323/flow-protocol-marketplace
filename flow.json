@@ -1,19 +1,58 @@
 {
-  "dependencies": {
-    "FungibleToken": {
-      "source": "cadence/contracts/FungibleToken.cdc",
-      "aliases": {
-        "emulator": "ee82856bf20e2aa6"
-      }
-    }
-  },
-  "contracts": {
-    "Counter": { ... },
-    "ExampleToken": {
-      "source": "cadence/contracts/ExampleToken.cdc",
-      "aliases": {
-        "emulator": "0000000000000007"
-      }
-    }
-  }
+	"contracts": {
+		"ExampleToken": {
+			"source": "cadence/contracts/ExampleToken.cdc",
+			"aliases": {
+				"testing": "0000000000000007"
+			}
+		}
+	},
+	"dependencies": {
+		"Burner": {
+			"source": "emulator://f8d6e0586b0a20c7.Burner",
+			"hash": "ec275d230a581bc950b34be5105d1ad24c560a93cd03350037759f0b56306c76",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"FungibleToken": {
+			"source": "emulator://ee82856bf20e2aa6.FungibleToken",
+			"hash": "3b04b3191e0c5d4d9ee3ce9c671b11985d29bf2732a5721b526cc8523c536f8f",
+			"aliases": {
+				"emulator": "ee82856bf20e2aa6",
+				"mainnet": "f233dcee88fe0abe",
+				"testnet": "9a0766d93b6608b7"
+			}
+		},
+		"ViewResolver": {
+			"source": "emulator://f8d6e0586b0a20c7.ViewResolver",
+			"hash": "768ccf994f37c4bf1902364b2f67d82ae982c8d07facc60e40c64514e7cedd4d",
+			"aliases": {
+				"emulator": "f8d6e0586b0a20c7",
+				"mainnet": "1d7e57aa55817448",
+				"testnet": "631e88ae7f1d7c20"
+			}
+		}
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"mainnet-fork": {
+			"host": "127.0.0.1:3569",
+			"fork": "mainnet"
+		},
+		"testing": "127.0.0.1:3569",
+		"testnet": "access.devnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "f8d6e0586b0a20c7",
+			"key": {
+				"type": "file",
+				"location": "emulator-account.pkey"
+			}
+		}
+	}
 }
