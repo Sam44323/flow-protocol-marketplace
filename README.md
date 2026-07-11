@@ -13,3 +13,12 @@ Seller                   Marketplace                Buyer
   |<-- FT payment via cap ---|                       |
   |                          |--- NFT via cap ------>|
   |                          |  (to Buyer's Collection)
+
+
+# Tech-Stack
+- Cadence
+- Flow
+- Flow-cli
+
+# Licenses
+MIT
