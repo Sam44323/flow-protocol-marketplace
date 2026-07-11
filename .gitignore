@@ -1,0 +1,10 @@
+# flow
+emulator-account.pkey
+imports
+.env
+..gpg
+.gpg
+plans.md
+.cursorignore
+.git
+*.pkey
